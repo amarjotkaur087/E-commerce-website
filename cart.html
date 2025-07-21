@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cart - E-commerce Website</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/cart.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Shopzy</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="cart.html" class="active">Cart</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="cart-page container">
+        <h1>Your Cart</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Image</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="cartProductsList">
+                <!-- Cart products will be dynamically inserted here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" style="text-align: right;"><strong>Total Amount:</strong></td>
+                    <td id="totalAmount">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shopzy. All rights reserved.</p>
+            <div class="social-media-links">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.simpleicons.org/facebook/ffffff" alt="Facebook" style="width:24px; height:24px;" />
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" style="margin-left:10px;">
+                    <img src="https://cdn.simpleicons.org/x/ffffff" alt="Twitter" style="width:24px; height:24px;" />
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style="margin-left:10px;">
+                    <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram" style="width:24px; height:24px;" />
+                </a>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top">&#8679;</button>
+</body>
+</html>

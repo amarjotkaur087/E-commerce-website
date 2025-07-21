@@ -1,0 +1,87 @@
+index.html <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products - E-commerce Website</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/products.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Shopzy</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="products-page container">
+        <h1>Products</h1>
+        <div class="filters">
+            <div class="filter-category">
+                <h3>Category Filter</h3>
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="home-appliances">Home Appliances</option>
+                    <option value="books">Books</option>
+                </select>
+            </div>
+            <div class="filter-price">
+                <h3>Price Range Filter</h3>
+                <input type="range" id="priceRange" min="0" max="1000" step="10" value="1000" />
+                <span id="priceValue">₹0 - ₹1000</span>
+            </div>
+        </div>
+
+    <div class="products-list products-grid" id="productsList">
+        <!-- Products will be dynamically inserted here -->
+    </div>
+
+    <!-- Modal for product options -->
+    <div id="productOptionsModal" style="display:none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        background: white; border: 1px solid #ccc; padding: 20px; z-index: 1000;">
+        <h2 class="modal-product-name"></h2>
+        <button id="buyNowBtn">Buy Now</button>
+        <button id="addToCartBtn">Add to Cart</button>
+        <button id="closeModalBtn">Close</button>
+    </div>
+
+    <!-- Modal overlay -->
+    <div id="modalOverlay" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.5); z-index: 999;"></div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shopzy. All rights reserved.</p>
+            <div class="social-media-links">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.simpleicons.org/facebook/ffffff" alt="Facebook" style="width:24px; height:24px;" />
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" style="margin-left:10px;">
+                    <img src="https://cdn.simpleicons.org/x/ffffff" alt="Twitter" style="width:24px; height:24px;" />
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style="margin-left:10px;">
+                    <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram" style="width:24px; height:24px;" />
+                </a>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top">&#8679;</button>
+</body>
+</html>

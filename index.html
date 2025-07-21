@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E-commerce Website - All in One</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/home-products.js" defer></script>
+    <script src="assets/js/category.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Shopzy</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="category.html" class="nav-link">Categories</a></li>
+                <li><a href="cart.html" class="nav-link">Cart</a></li>
+                <li><a href="checkout.html" class="nav-link">Checkout</a></li>
+                <li><a href="order-confirmation.html" class="nav-link">Order Confirmation</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li><a href="search.html" class="nav-link">Search</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Large Banner Section -->
+    <section id="largeBanner" class="large-banner">
+        <div class="banner-content">
+            <h1>Welcome to Shopzy</h1>
+            <p>Discover the best products and categories</p>
+        </div>
+    </section>
+
+    <!-- Card Sections -->
+    <section class="card-section container">
+        <h2>Trending Products</h2>
+        <div class="products-grid" id="trendingProductsList">
+            <!-- Trending products dynamically loaded here -->
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shopzy. All rights reserved.</p>
+            <div class="social-media-links">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.simpleicons.org/facebook/ffffff" alt="Facebook" style="width:24px; height:24px;" />
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" style="margin-left:10px;">
+                    <img src="https://cdn.simpleicons.org/x/ffffff" alt="Twitter" style="width:24px; height:24px;" />
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style="margin-left:10px;">
+                    <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram" style="width:24px; height:24px;" />
+                </a>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top">&#8679;</button>
+
+</body>
+</html>

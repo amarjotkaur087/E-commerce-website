@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout - E-commerce Website</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/checkout.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Shopzy</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="checkout-page container">
+        <h1>Checkout</h1>
+        <div class="checkout-content">
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <p>Items in your cart will be displayed here.</p>
+                <!-- For simplicity, static content or can be dynamically loaded -->
+            </div>
+            <div class="shipping-info">
+                <h2>Shipping Information</h2>
+                <form id="shippingForm">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required />
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required />
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required />
+
+                    <label for="state">State/Province:</label>
+                    <input type="text" id="state" name="state" required />
+
+                    <label for="zip">Zip/Postal Code:</label>
+                    <input type="text" id="zip" name="zip" required />
+
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" required />
+
+                    <button type="submit" class="btn">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shopzy. All rights reserved.</p>
+            <div class="social-media-links">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.simpleicons.org/facebook/ffffff" alt="Facebook" style="width:24px; height:24px;" />
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" style="margin-left:10px;">
+                    <img src="https://cdn.simpleicons.org/x/ffffff" alt="Twitter" style="width:24px; height:24px;" />
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style="margin-left:10px;">
+                    <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram" style="width:24px; height:24px;" />
+                </a>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top">&#8679;</button>
+</body>
+</html>
